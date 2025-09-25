@@ -1,0 +1,11 @@
+# Ignore all compiled class files
+*.class
+
+# Ignore common IDE/project files (optional but useful)
+*.log
+*.DS_Store
+*.idea/
+.vscode/
+target/
+bin/
+out/
