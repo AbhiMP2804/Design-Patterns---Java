@@ -11,20 +11,20 @@ public class Samosa {
         }
 
         // Not good for threads 
-        // LAZY Method of creating singleton object and you are not worried about threads 
-        // Method to get the object 
-        // static method as we can useit witht he class name to get the object
-        // Non static method need objects to access them
-        // public static Samosa getSamosa()
-        // {
-        //     // Object of this class
-        //     if(samosa == null)
-        //     {
-        //         samosa = new Samosa();
-        //     }
-        //     return samosa;
-        // }
-
+        /* LAZY Method of creating singleton object and you are not worried about threads 
+        Method to get the object 
+        static method as we can useit witht he class name to get the object
+        Non static method need objects to access them
+        public static Samosa getSamosa()
+        {
+            // Object of this class
+            if(samosa == null)
+            {
+                samosa = new Samosa();
+            }
+            return samosa;
+        }
+        */
 
         // To handle threads problem we can use below Method synchronization
         // But we only want the block line to be synchronised there might be code above it or  below it we do not want it to be synchronised
@@ -60,6 +60,19 @@ public class Samosa {
             return samosa;
         }
         
+
+        // Steps to break  Singleton Design Pattern
+        /* 1. Reflection APS
+         * Solution : 1) if object is there ==> throw exception from inside constructor 2) use Enum
+         * 
+         * 2. Deserialization 
+         * Solution : implement readResolve method
+         * 
+         * 
+         * 3. Cloning
+         * Solution : Override the clone method and return same object
+         * 
+         */
 
         
 }
