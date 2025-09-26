@@ -1,0 +1,9 @@
+package AbstractFactory;
+
+interface Employee {
+
+    int salary();
+
+    String name();
+    
+}
